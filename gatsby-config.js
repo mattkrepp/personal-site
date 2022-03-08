@@ -2,7 +2,7 @@
 module.exports = {
 	siteMetadata: {
 		title: 'Matt Krepp',
-		siteUrl: 'https://www.yourdomain.tld',
+		siteUrl: 'https://mattkrepp.me',
 	},
 	plugins: [ 
 		{
