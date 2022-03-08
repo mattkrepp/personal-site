@@ -1,0 +1,52 @@
+@use '../../../base/colors.scss';
+
+.experience {
+  width: 100%;
+  color: colors.$color-text-primary;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__menu {
+    margin: 0;
+    display: inline-block;
+  }
+
+  &__menu-item {
+    padding: 0.5rem;
+    min-width: 17.5rem;
+    cursor: pointer;
+    border-radius: 7px;
+    
+    &:hover {
+      background-color: lighten(colors.$color-primary, 10%);
+      transition: all 500ms;
+    }
+
+    & + & {
+      margin-top: 1rem;
+    }
+    
+    &--active {
+      background-color: colors.$color-quaternary;
+      transition: all 500ms;
+
+      &:hover {
+        background-color: colors.$color-quaternary;
+      }
+
+      & > .experience__menu-item-company {
+        color: colors.$color-primary;
+      }
+    }
+
+    &-company {
+      color: colors.$color-text-tertiary;
+      margin-top: 0.25rem;
+    }
+  }
+}

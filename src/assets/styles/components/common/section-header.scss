@@ -1,0 +1,6 @@
+@use '../../base/colors.scss';
+
+.section-header {
+  color: colors.$color-text-secondary;
+  margin-bottom: 2rem;
+}

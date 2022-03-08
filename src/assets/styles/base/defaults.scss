@@ -1,0 +1,65 @@
+@use '../base/colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap');
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+	min-height: 100%;
+	height: auto;
+	overflow-x: hidden;
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	letter-spacing: 0.5px;
+	background-color: colors.$color-tertiary;
+
+	h1 {
+		font-weight: 700;
+		font-size: 3.625rem; // 58px
+		margin-top: 0;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 2.9375rem; // 47px
+		margin-top: 0;
+	}
+
+	h3 {
+		font-weight: 600;
+		font-size: 2.0625rem; // 33px
+		margin-top: 0;
+	}
+
+	h4 {
+		font-weight: 600;
+		font-size: 1.4375rem; // 23px
+		margin-top: 0;
+	}
+
+	h5 {
+		font-weight: 600;
+		font-size: 1.1875rem; // 19px
+		margin-top: 0;
+	}
+
+	h6 {
+		font-weight: 500;
+		font-size: 1rem; // 16px
+		margin-top: 0;
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 1rem;
+		letter-spacing: 0.5px; 
+		margin-top: 0;
+	}
+}
+
+@function rem($pixels, $dens: 1) {
+	@return $pixels / $base-font-size / $dens * 1rem;
+}

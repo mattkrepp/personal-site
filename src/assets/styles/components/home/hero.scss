@@ -1,0 +1,25 @@
+@use '../../base/colors.scss';
+
+.hero {
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+
+  &__header {
+    display: inline-block;
+    margin: 0;
+    font-weight: 600;
+		font-size: 6rem;
+    color: colors.$color-text-secondary;
+  }
+
+  &__subheader {
+    margin: 1rem 0 0 0;
+    color: colors.$color-text-primary;
+    font-weight: 500;
+  }
+
+  &__contact-button {
+    margin-top: 2rem;
+  }
+}

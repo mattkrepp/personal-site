@@ -1,0 +1,64 @@
+@use '../../base/colors.scss';
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: colors.$color-primary;
+  height: 6rem;
+  z-index: 9999;
+  transition: all 500ms;
+
+  * > &__logo-link {
+    text-decoration: none;
+  }
+
+  &--scrolled {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &__logo {
+    width: 3rem;
+    line-height: 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: colors.$color-quaternary;
+    border-radius: 50%;
+    border: 2px solid colors.$color-quaternary;
+    text-align: center;
+  }
+
+  &__max-width-container {
+    width: 80%;
+    max-width: 125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right-content {
+    & > * + * {
+        margin-left: 2rem;
+    }
+  }
+
+  &__link {
+    color: colors.$color-text-primary;
+    text-decoration: none;
+    text-decoration: underline colors.$color-quaternary solid 2px;
+    text-underline-offset: 4px;
+		font-weight: 500;
+		font-size: 1rem;
+    letter-spacing: 2px;  
+    transition: all 200ms;
+
+    &:hover {
+      color: darken(colors.$color-text-primary, 20%);
+      text-decoration-color: darken(colors.$color-quaternary, 10%);
+    }
+  }
+}

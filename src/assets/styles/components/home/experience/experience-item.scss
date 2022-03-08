@@ -1,0 +1,29 @@
+@use '../../../base/colors.scss';
+
+.experience-item {
+  margin-left: 6rem;
+  min-height: 20rem;
+
+  &__date-location {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: colors.$color-text-tertiary;
+  }
+
+  &__description-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__description-row {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+
+    &::before {
+      content: "\2022"; // Unicode bullet symbol
+      color: colors.$color-text-tertiary;
+      margin-left: -1.25rem;
+      padding-right: 0.625rem;
+    }
+  }
+}

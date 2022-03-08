@@ -1,0 +1,10 @@
+$color-primary: #2D3142;
+$color-secondary: #BFC0C0;
+$color-tertiary: #FFEBCF;
+$color-quaternary: #EF8354;
+$color-quinary: lighten(#4F5D75, 20%);
+
+$color-text-primary: $color-tertiary;
+$color-text-secondary: $color-quaternary;
+$color-text-tertiary: $color-quinary;
+$color-text-inverted: $color-primary;

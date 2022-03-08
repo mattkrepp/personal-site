@@ -1,0 +1,26 @@
+@use '../../base/colors.scss';
+
+.contact {
+  width: 100%;
+  padding-top: 5rem;
+
+  &__text {
+    color: colors.$color-text-inverted;
+    font-weight: 400;
+    max-width: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: colors.$color-quaternary;
+    border: 1px solid colors.$color-quaternary;
+    border-radius: 7px;
+
+    & + & {
+      margin-left: 1rem;
+    }
+  }
+}

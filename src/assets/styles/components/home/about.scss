@@ -1,0 +1,98 @@
+@use '../../base/colors.scss';
+
+.about {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    max-width: 30rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: colors.$color-text-inverted;
+  }
+
+  &__right-content {
+    // align-self: center;
+  }
+
+  &__image {
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    display: block;
+  }
+
+  &__image-caption {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.625rem; //10px
+    color: colors.$color-text-secondary;
+  }
+
+  &__education-tech-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__subsection {
+    border: 2px solid colors.$color-text-secondary;
+    border-radius: 10px;
+    width: 100%;
+
+    padding: 1rem;
+
+    & + & {
+      margin-left: 2rem;
+    }
+
+    & * {
+      font-size: 0.875rem;
+      color: colors.$color-text-inverted;
+    }
+
+    &-header {
+      color: colors.$color-text-secondary;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__education-item {
+    & + & {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__education-location, &__education-school {
+    color: colors.$color-text-tertiary;
+    font-size: 0.75rem;
+  }
+
+  &__technology-list {
+      padding-left: 0;
+      list-style: none;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+  }
+  
+  &__technology-item {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+
+    &::before {
+      content: "\2022"; // Unicode bullet symbol
+      color: colors.$color-text-tertiary;
+      margin-left: -1.25rem;
+      padding-right: 0.625rem;
+    }
+  }
+}

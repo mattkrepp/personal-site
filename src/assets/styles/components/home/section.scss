@@ -1,0 +1,58 @@
+@use '../../base/colors.scss';
+
+.section {
+  width: 100%;
+
+  &__container {
+    max-width: 60rem;
+    margin: 0 auto 10rem auto;
+  }
+
+  &__divider-image {
+    height: 150px;
+    display: block;
+    line-height: 0;
+  }
+
+  & + & > &__container {
+      margin-top: 6rem;
+  }
+
+  &--primary {
+    background-color: colors.$color-primary;
+
+    & > .section__divider-image {
+      background-color: colors.$color-tertiary;
+    }
+  }
+
+  &--secondary {
+    background-color: colors.$color-tertiary;
+
+    & > .section__divider-image {
+      transform: rotate(180deg);
+      background-color: colors.$color-primary;
+    }
+  }
+}
+
+// .custom-shape-divider-top-1646690874 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   line-height: 0;
+//   transform: rotate(180deg);
+// }
+
+// .custom-shape-divider-top-1646690874 svg {
+//   position: relative;
+//   display: block;
+//   width: calc(173% + 1.3px);
+//   height: 150px;
+// }
+
+// .custom-shape-divider-top-1646690874 .shape-fill {
+//   fill: #2D3142;
+// }
