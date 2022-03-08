@@ -26,6 +26,7 @@ module.exports = {
           include: /src\/assets\/images\/svgs/
         }
       }
-    }
+    },
+    `gatsby-plugin-gatsby-cloud`,
 	],
 };
