@@ -1,4 +1,3 @@
-import React from 'react';
 import { SectionHeader } from '../../common/section-header';
 
 export const Projects = () => (

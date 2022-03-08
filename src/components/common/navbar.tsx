@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import '../../assets/styles/components/common/navbar.scss';
 
 export const Navbar = () => {
   const [isPageScrolled, setIsPageScrolled] = useState(false);
+
   const onScroll = () => {
     const currentScrollPosition = window.pageYOffset;
     if (currentScrollPosition > 0) {
@@ -13,7 +14,10 @@ export const Navbar = () => {
     }
   };
 
-  window.addEventListener('scroll', onScroll);
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <div className={`navbar${isPageScrolled ? ' navbar--scrolled' : ''}`}>

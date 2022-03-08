@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../assets/styles/base/defaults.scss';
 import '../../assets/styles/base/colors.scss';
 

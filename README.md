@@ -1,4 +1,5 @@
-## Welcome to my personal site!
+## Personal Site V1
 
-**This site was built with Gatsby and React and is hosted on Gatsby Cloud**
-Please feel free to reach out if you have any questions or comments.
+**Built with Gatsby and React, deployed with Gatsby Cloud**
+
+- Please feel free to reach out if you have any questions or comments.
