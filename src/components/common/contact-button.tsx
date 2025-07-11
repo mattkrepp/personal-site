@@ -8,7 +8,7 @@ interface Props {
 export const ContactButton = ({ text, className }: Props) => (
   <a
     className={`contact-button${className ? ` ${className}` : ''}`}
-    href='mailto:hello@mattkrepp.me'
+    href='mailto:hello@mattkrepp.com'
   >
     {text ?? 'Say hello'}
   </a>
