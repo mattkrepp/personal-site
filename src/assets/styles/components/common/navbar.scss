@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   background-color: colors.$color-primary;
-  height: 6rem;
+  height: 7rem;
   z-index: 9999;
   transition: all 500ms;
 
@@ -60,5 +60,12 @@
       color: darken(colors.$color-text-primary, 20%);
       text-decoration-color: darken(colors.$color-quaternary, 10%);
     }
+  }
+
+  &__name {
+    color: colors.$color-text-secondary;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
   }
 }

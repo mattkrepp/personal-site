@@ -24,8 +24,8 @@ export const Navbar = () => {
       <div className='navbar__max-width-container'>
         <div className='navbar__left-content'>
           <AnchorLink className='navbar__logo-link' to='/'>
-            <div className='navbar__logo'>
-              M
+            <div className='navbar__name'>
+              MATT<br />KREPP
             </div>
           </AnchorLink>
         </div>

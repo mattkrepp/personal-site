@@ -5,9 +5,9 @@ export interface EducationItem {
 }
 
 export const aboutText: string[] = [
-  'Hi! My name is Matt and I love building things for the web. My journey into engineering began in 2016. After college, I began working in sales for a tech startup. I quickly came to realize two things: that I loved working in tech, and that sales was not my passion.',
-  'With that realization in hand, I decided to go back to school. I enrolled in Portland State’s Computer Science program, where I spent a year learning the fundamentals before finding my passion for web development and enrolling at Fullstack Academy. After completing the Software Engineering program at Fullstack, I was offered a teaching fellowship, where I taught and mentored a group of students throughout their time in the program.',
-  'For the past 3 years, I had the pleasure of working as a Software Engineer at an incredible PropTech startup, Doorkee. As the sixth full-time employee, I had an integral part in building the platform and team from the ground-up. Working on a small team also gave me the opportunity to touch every part of the app, from front-end, to back-end, to DevOps.',
+  'Hi! My name is Matt, and I like to build things from scratch. For the past six years, I’ve been helping early-stage startups take ideas and products from zero to one. My passion is for building unforgettable experiences across app and web, and I revel in the challenge of wearing many hats.',
+  'While I’m experienced working across the entire stack, my particular focus lately has been around all things mobile. I’m intimately familiar with the React Native and Expo ecosystems, and I take joy in squashing bugs in the depths of the native layer.',
+  'Currently, I’m building the future of international money transfer at Pomelo, where I’ve been for the past three and a half years. As the ninth full-time employee at the company, I’ve experienced much of the startup lifecycle firsthand: from soft launch and early iteration, through full launch and our Founders Fund-led Series A, to rapidly scaling both platform and team, it’s safe to say we’ve covered a lot of ground! It has been an incredibly challenging and informative experience, and I’m proud to be a part of it.',
 ];
 
 export const education: EducationItem[] = [
