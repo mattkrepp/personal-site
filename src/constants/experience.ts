@@ -8,8 +8,23 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
+    company: 'Pomelo',
+    date: '2022 - Present',
+    role: 'Senior Software Engineer',
+    location: 'San Francisco, CA / Remote',
+    description: [
+      'Employee number 9 at Founders Fund-backed FinTech startup. Scrappy, generalist mindset, with a particular focus on mobile development',
+      'Leveraging React Native and Expo to deliver a performant, reliable app experience across platforms',
+      'Working cross-functionally to manage complex technical projects from inception to launch and beyond',
+      'Building and maintaining React web app, including design system components shared between web and native app',
+      'Implementing mobile and frontend infrastructure, including custom native modules, CI/CD, app distribution (native and OTA), testing, and monitoring',
+      'Designing and managing hiring and onboarding processes to enable rapid scaling of team',
+      'Facilitating mentorship and knowledge transfer to accelerate new engineer/intern ramp-up',
+    ],
+  },
+  {
     company: 'Doorkee',
-    date: '2019-2022',
+    date: '2019 - 2022',
     role: 'Software Engineer',
     location: 'New York, NY / Remote',
     description: [

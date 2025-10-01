@@ -29,16 +29,18 @@ export const education: EducationItem[] = [
 ];
 
 export const technologies: string[] = [
+  'React Native',
   'React',
+  'Expo',
+  'Mobile Native Module Development (Swift/Java/C++)',
+  'GraphQL',
+  'Relay',
+  'EAS Build + Deploy',
+  'Github Actions',
+  'Java + Spring Boot',
   'Node.js',
-  'Typescript',
   'MongoDB',
-  'Sass',
-  'AWS Lambda',
-  'MySQL',
   'PostgreSQL',
   'Segment',
-  'Snowflake',
-  'Cypress',
-  'Jest',
+  'Datadog',
 ];
